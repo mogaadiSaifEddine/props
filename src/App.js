@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import ProfilImage from './profile/65465563_2280138628869742_3010518860404097024_o.jpg'
+import ProfileComp from './profile/ProfileComponent'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <ProfileComp fullName = 'Mogaadi saif eddine ' profession='student' bio='jeune diplomé en informatique' >
+     <img src={ProfilImage} alt ='profil' ></img>
+     </ProfileComp>  
     </div>
   );
 }
